@@ -1,0 +1,126 @@
+@charset "utf-8";
+/******************************************************************************
+  STYLES USED IN THE DEMO ONLY
+******************************************************************************/
+html, body { 
+	min-height: 100%; 
+	margin:0; 
+	padding:0; }
+
+body {
+	font-family:"Open Sans",sans-serif;
+	background:#FFFFFF;
+	color:#363f46;
+}
+
+pre, code {
+	color:#363f46;    
+	font-family: monospace;
+	font-size:18px;
+}
+
+.container {
+	margin:0 auto;		
+}
+
+h1 {
+	font-size:62px;
+	color:#363f46;
+	font-family: 'Raleway', sans-serif;
+	font-weight:100;
+}
+
+p {
+	font-size:25px;
+	line-height:46px;
+	font-weight:100;
+	color:#363f46;
+}
+
+p.example {
+	font-size:20px;
+	line-height:32px;
+	font-weight:100;
+	color:#F363f46FF;	
+}
+
+h2 {
+	font-size:26px;
+	font-weight:300;
+	line-height:46px;
+	color:#363f46;	
+}
+
+ul li {
+	font-size:25px;
+	line-height:46px;
+	font-weight:100;
+	color:#FFF;
+}
+
+.setting {
+	font-weight:400;
+	display:inline-block;
+	width:170px;
+}
+
+
+
+.preset {
+	display:inline-block;
+	width:45%;
+	padding:20px 0;
+	text-align:center;
+	font-size:20px;
+	cursor:pointer;
+	color:#000;
+	text-transform:uppercase;
+	margin:20px 0 60px 0;
+	font-family:'Open Sans',sans-serif;
+	background:#FFFFFF;
+	border:6px double #000;
+	letter-spacing:1px;
+	transition:all 500ms ease; }
+	
+.preset:hover {
+	background:#000;
+	color:#FFF;
+	border-color:#FFF; }
+
+
+
+
+/* IPHONE */
+@media (max-width:375px){
+	.container {
+		width:375px;
+		padding-top:500px;
+	}	
+}
+
+/* IPAD */
+@media (max-width:768px){
+	.container {
+		width:500px;
+		padding-top:250px;
+	}	
+	
+	.setting {display:block;}
+}
+
+
+/* DESKTOP */
+@media (min-width:768px){
+	.container {
+		width:768px;
+		padding-top:200px;
+	}	
+}
+
+/* DESKTOP + */
+@media (min-width:1024px){
+	.container {
+		width:1000px;
+		padding-top:100px;
+	}	
+}

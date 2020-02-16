@@ -117,3 +117,9 @@
 #terminal.terminal_orange { background:#101042; }
 #terminal.terminal_orange p, #terminal.terminal_orange ul li { color:#d26b2b; }
 
+#terminal.terminal_purple { background:#000; }
+#terminal.terminal_purple p, #terminal.terminal_purple ul li { color:#5F2881; }
+
+#terminal.terminal_particles { background:#000; }
+#terminal.terminal_particles p, #terminal.terminal_particles ul li { color:#5F2881; }
+

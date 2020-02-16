@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -19,15 +18,52 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- terminal css -->
+	<link rel="stylesheet"  href="css/terminal.css" type="text/css" media="all" />
+	<!-- Loading JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- load confetti js -->
+	<script src="js/confetti.min.js"></script>
+	<!-- load particles js -->
+	<script src="js/particles.js"></script>
+	<!-- load terminal js -->
+	<script src="js/terminal.js"></script>
+	<!-- load terminal -->     
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+			$('#terminal').terminal({
+				// SETTINGS GO HERE	
+				"mode":"fileloader"
+			});
+		});
+	</script>
 </head>
 
 <body>
 
-	<!--================ Start Header Area =================-->
-	<header class="header_area">
-	
-	</header>
-	<!--================ End Header Area =================-->
+	<!-- TERMINAL -->
+    <div id="terminal" class="terminal_bright_green">
+		<body id="particles-js"></body>
+    	<p>Welcome to Gareth's Online CV!<br>
+           Crafting packets just for you.<br>
+		   Hackers beware 👀<br>
+		   OK here we go! <br><br></p>
+		   
+		<ul>
+			<li class="terminal_load_line" data-terminal-time="100" data-terminal-speed="10">Looking for power button</li> 
+			<li class="terminal_load_line" data-terminal-time="100" data-terminal-speed="10">Connecting to server</li>
+        	<li class="terminal_load_line" data-terminal-time="100" data-terminal-speed="10">Authenticating user IP</li>            
+        	<li class="terminal_load_line" data-terminal-time="100" data-terminal-speed="10">Calibrating flux capacitors</li>            
+        	<li class="terminal_load_line" data-terminal-time="100" data-terminal-speed="10">Parsing HTML</li>            
+        	<li class="terminal_load_line" data-terminal-time="100" data-terminal-speed="10">Returning the slab</li>
+        	<li class="terminal_load_line" data-terminal-time="100" data-terminal-speed="10">Preparing to serve digial hug</li>            
+        	<li class="terminal_load_line" data-terminal-time="50" data-terminal-speed="0">LOAD SUCCESSFULL</li>                                                        
+        </ul><br>
+    </div>
+    <!-- /TERMINAL -->
 
 	<!--================ Start Home Banner Area =================-->
 	<section class="home_banner_area">
@@ -42,8 +78,7 @@
 							<h5 class="text-uppercase">Tech Enthusiast 💻</h5>
 							<h5 class="text-uppercase">Citizen of the internet 🌐</h5>
 							<div class="d-flex align-items-center">
-								<a class="primary_btn" href="mailto:gareth@wood.gg"><span>Hire Me! 🤝</span></a>
-								<a class="primary_btn tr-bg" href="Gareth_Wood_CV.PDF"><span>Grab my CV! ⬇</span></a>
+								<a class="primary_btn" onmouseover="confetti.start(5000);" href="mailto:gareth@wood.gg"><span>Hire Me! 🤝</span></a>
 							</div>
 						</div>
 					</div>
@@ -83,7 +118,7 @@
 							I use my experience and sight over inovative market solutions across the globe to implement better solutions empowering and protecting business.
 							I look forward to connecting with you!
 						</p>
-						<a class="primary_btn" href="#"><span>Download CV</span></a>
+						<a class="primary_btn tr-bg" href="Gareth_Wood_CV.PDF"><span>Grab my CV as PDF! ⬇</span></a>
 					</div>
 				</div>
 			</div>
@@ -242,8 +277,8 @@
 					<div class="progress-table">
 						<div class="table-head">
 							<div class="serial">#</div>
-							<div class="country">Countries</div>
-							<div class="visit">Visits</div>
+							<div class="country">Skill</div>
+							<div class="visit">Percentage</div>
 							<div class="percentage">Percentages</div>
 						</div>
 						<div class="table-row">
@@ -430,51 +465,12 @@
 	</div>
 	<!--================ End Testimonial Area =================-->
 
-	<!--================ Start Newsletter Area =================-->
-	<section class="newsletter_area">
-		<div class="container">
-			<div class="row justify-content-center align-items-center">
-				<div class="col-lg-12">
-					<div class="subscription_box text-center">
-						<h2 class="text-uppercase text-white">I'll get in touch with you! What a service...</h2>
-						<p class="text-white">
-							Pop your email in the field below and i'll get in contact with you. 
-						</p>
-						<div class="subcribe-form" id="mc_embed_signup">
-							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
-								<input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
-								<div style="position: absolute; left: -5000px;">
-									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-								</div>
-								<button class="primary-btn hover d-inline">Get Started</button>
-								<div class="info"></div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Newsletter Area =================-->
-
 	<!--================Footer Area =================-->
 	<footer class="footer_area">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-12">
 					<div class="footer_top flex-column">
-						<!-- <div class="footer_logo">
-							<a href="#">
-								<img src="img/logo.png" alt="">
-							</a>
-							<h4>Follow Me</h4>
-						</div>
-						<div class="footer_social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div> -->
 					</div>
 				</div>
 			</div>
@@ -486,22 +482,14 @@
 	</footer>
 	<!--================End Footer Area =================-->
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<!-- Loading JavaScript -->
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/stellar.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
 	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
 	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
 </body>
 
