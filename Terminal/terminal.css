@@ -1,0 +1,119 @@
+@charset "utf-8";
+/******************************************************************************
+  $terminal v1.1 || CODEDROID12 || EXCLUSIVE TO CODEDROID12 || CORE CSS FILE
+******************************************************************************/
+/******************************************************************************
+  MAIN RESET AND GENERAL STYLING
+******************************************************************************/
+.terminal * {
+	vertical-align:baseline; margin:0; padding:0; border:0; cursor:inherit; box-sizing:content-box;
+	/* AVOID OPENING MOBILE CONTEXT MENU ON TAPHOLD */
+	-webkit-touch-callout:none; -moz-touch-callout:none; -ms-touch-callout:none; -o-touch-callout:none; touch-callout:none; 
+	/* AVOID HIGHLIGHTING ON TAP */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); tap-highlight-color: rgba(0,0,0,0); 
+	/* AVOID CHANGING TEXT SIZE ON ORIENTATION CHANGE */
+	-webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none; -o-text-size-adjust:none; text-size-adjust:none; 
+	/* AVOID SELECTING TEXT AND IMAGES */
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; -o-user-select:none; user-select:none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	float:none;	
+	font-size:100%; }
+
+@font-face { font-family: 'terminal';
+    src: url('fonts/perfect_dos_vga_437.eot');
+    src: url('fonts/perfect_dos_vga_437.eot?#iefix') format('embedded-opentype'),
+         url('fonts/perfect_dos_vga_437.woff2') format('woff2'),
+         url('fonts/perfect_dos_vga_437.woff') format('woff'),
+         url('fonts/perfect_dos_vga_437.ttf') format('truetype'),
+         url('fonts/perfect_dos_vga_437.svg#perfect_dos_vga_437regular') format('svg');
+    font-weight: normal; font-style: normal; }
+
+/* TERMINAL OVERLAY */	
+#terminal {
+	width:100%;
+	min-height:100%;
+	position:fixed;
+	z-index:9999999999; 
+	padding-top:5%; 
+	font-family:'terminal',serif; }
+
+#terminal p {
+	font-size:30px; 
+	line-height:33px; 
+	margin-left:80px; }
+	
+#terminal ul { 
+	list-style-type: none; 
+	margin-left:40px; }
+	
+#terminal ul li { 
+	display:none;
+	margin:0; 
+	line-height:30px; 
+	transition:all 0.5s ease; }
+
+.terminal_filename { display:inline-block; width:270px; }
+.terminal_size {     display:inline-block; width:130px; }
+.terminal_date { 	 display:inline-block; width:130px; }
+.teminal_time { 	 display:inline-block; width:120px; }
+.terminal_total { display:inline-block; width:350px; margin-left:285px; }
+
+
+/* TERMINAL FILELOADER */
+#terminal ul li.terminal_load_line {
+	font-size:32px;
+	margin-bottom:15px;
+	opacity:0;
+	transition:opacity 0.2s ease; }
+
+
+/* LOADING WORD */
+.loading_word { opacity:0; transition:all 0.5s ease; }
+.loading_word span { display:none; }
+
+/* BLINKING CURSOR ANIMATION */
+.terminal_cursor {
+	animation-name:terminal_cursor;
+    animation-duration:0.5s;
+    animation-timing-function:ease;
+    animation-iteration-count:infinite; }
+
+@-moz-keyframes terminal_cursor {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; } }
+
+@-webkit-keyframes terminal_cursor {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; } }
+
+@keyframes terminal_cursor {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; } }
+	
+
+/*****************/
+/* COLOR PRESETS */
+/*****************/
+#terminal.terminal_green { background:#000; }
+#terminal.terminal_green p, #terminal.terminal_green ul li { color:#00c517; }
+
+#terminal.terminal_gray { background:#000; }
+#terminal.terminal_gray p, #terminal.terminal_gray ul li { color:#aaaaaa; }
+
+#terminal.terminal_blue { background:#000; }
+#terminal.terminal_blue p, #terminal.terminal_blue ul li { color:#00ffff; }
+
+#terminal.terminal_dark_blue { background:#0000bb; }
+#terminal.terminal_dark_blue p, #terminal.terminal_dark_blue ul li { color:#FFFFFF; }
+
+#terminal.terminal_bright_green { background:#005400; }
+#terminal.terminal_bright_green p, #terminal.terminal_bright_green ul li { color:#00ff00; }
+
+#terminal.terminal_orange { background:#101042; }
+#terminal.terminal_orange p, #terminal.terminal_orange ul li { color:#d26b2b; }
+
