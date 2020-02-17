@@ -2445,7 +2445,7 @@ h6 {
 /* Start Barand Area css
 ============================================================================================ */
 .brand_area {
-  padding-bottom: 170px; }
+  padding-bottom: 100px; }
   @media (max-width: 1199px) {
     .brand_area {
       padding-bottom: 80px; } }
@@ -2455,7 +2455,7 @@ h6 {
 /* Start Features Area css
 ============================================================================================ */
 .features_area {
-  padding-bottom: 170px; }
+  padding-bottom: 100px; }
   @media (max-width: 1199px) {
     .features_area {
       padding-bottom: 50px; } }
@@ -3585,9 +3585,15 @@ h6 {
     .main-timeline .timeline:nth-child(even) .timeline-year{
         right: 9%;
     }
+
 }
 /* End Timeline Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
+
+.batman {
+  padding: 20px 0;
+  position: relative;
+}
 
 /*# sourceMappingURL=style.css.map */
