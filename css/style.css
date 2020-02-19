@@ -70,7 +70,7 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
-  padding: 100px 0; }
+  padding: 50px 0; }
   @media (max-width: 1199px) {
     .section_gap {
       padding: 80px 0; } }
@@ -2426,7 +2426,10 @@ h6 {
     .about_area .main_title p {
       margin-bottom: 20px; }
   .about_area .primary_btn {
-    margin-top: 20px; }
+    margin-top: 20px; 
+    margin-left: 1%;
+    width: 50%;
+  }
   .about_area .about_img {
     position: relative;
     right: 250px; }
