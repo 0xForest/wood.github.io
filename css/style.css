@@ -2597,7 +2597,7 @@ h6 {
 /* Start Portfolio Area css
 ============================================================================================ */
 .portfolio_area {
-  padding-bottom: 120px; }
+  padding-bottom: 20px; }
   @media (max-width: 991px) {
     .portfolio_area {
       padding-bottom: 50px; } }
@@ -2996,7 +2996,7 @@ h6 {
   /* Footer Area css
   ============================================================================================ */
   .footer_area {
-    padding-top: 100px !important;
+    padding-top: 50px !important;
     padding-bottom: 0px !important;
     background-image: none !important;
     background-color: #fcf8ff; }
